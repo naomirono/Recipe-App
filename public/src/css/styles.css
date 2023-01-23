@@ -22,7 +22,12 @@ section {
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background-color: rgb(26, 26, 27);
+  /* background-color: #fff; */
+  background-image:url(../img/output-onlinepngtools\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 .container {
   width: 100%;
@@ -30,19 +35,27 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
 }
 .brand {
   text-align: center;
-  font-size: 4rem;
-  color: whitesmoke;
+  font-size: 3rem;
+  color: black;
   margin-bottom: 30px;
+  font-family: pyxidium quick;
+}
+.brand span{
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, orangeRed,darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 form {
   width: 90%;
   max-width: 400px;
   margin: 20px auto;
-  background-color: rgb(223, 223, 223);
-  border-radius: 8px;
+  background-color: white;
+  border-radius: 50px;
   
 }
 input {
@@ -53,6 +66,7 @@ input {
   font-size: 2rem;
   background-color:transparent;
   display: inline-block;
+  font-family: pyxidium quick;
 }
 form ion-icon {
     width: 8%;
@@ -70,15 +84,17 @@ form ion-icon {
   }
   .item {
     width: 100%;
-    border-radius: 8px;
-    background-color: rgb(37, 37, 37);
+    border-radius:8px;
+    background-color: whitesmoke;
     padding: 15px;
     overflow: hidden;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .item img {
     width: 100%;
     height: 300px;
-    border-radius: 4px;
+    border-radius: 8px;
   }
   .item .flex-container {
     display: flex;
@@ -86,34 +102,50 @@ form ion-icon {
     justify-content: space-between;
   }
   .item .title {
-    color: whitesmoke;
-    margin: 20px 10px 0 0;
+    color: black;
+    margin: 20px 0 0 0;
     font-size: 1.8rem;
     font-weight: 400;
+    /* font-family: pyxidium quick; */
   }
   .view-btn {
     text-decoration: none;
     text-align: center;
     width: 130px;
     padding: 10px 0;
-    background-color: #404041;
-    color: whitesmoke;
+    background:linear-gradient(to right, orangeRed,darkorange) ;
+    color: black;
     font-size: 1.4rem;
     margin-top: 20px;
-    border-radius: 4px;
+    border-radius: 50px;
     align-self: flex-start;
   }
+  .view-btn:hover{
+    
+    letter-spacing: .1rem;}
+
   .item-data {
-    color: whitesmoke;
+    color: black;
     display: block;
     margin-top: 10px;
     font-size: 1.4rem;
     letter-spacing: 0.05rem;
     line-height: 2rem;
+    font-family: pyxidium quick;
   }
   .container.initial .brand {
-    font-size: 7rem;
+    font-size: 5rem;
+    font-family: pyxidium quick;
+    
   }
+  .container.initial .brand span{
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, orangeRed,darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
   .container.initial form {
     max-width: 800px;
   }
@@ -135,6 +167,9 @@ form ion-icon {
     .container.initial form input {
       padding: 10px;
       font-size: 2rem;
+    }
+    section{
+        padding: 0;
     }
   }
   
