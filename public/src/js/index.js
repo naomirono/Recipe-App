@@ -1,3 +1,25 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBVsH0eTcLIGUqtqeLpL29bkEb6Acg99Ho",
+  authDomain: "neyo-recipe-app.firebaseapp.com",
+  projectId: "neyo-recipe-app",
+  storageBucket: "neyo-recipe-app.appspot.com",
+  messagingSenderId: "742274429283",
+  appId: "1:742274429283:web:37a76743b5f4e568c86356",
+  measurementId: "G-2GL7DPX11C"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 const searchForm = document.querySelector("form"); //Grabs details inside form from index.html
 const searchResult = document.querySelector(".search-result");//Grabs details inside search-result from index.html
 const container = document.querySelector(".container");//Grabs details inside container from index.html
